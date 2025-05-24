@@ -22,6 +22,7 @@
   '';
 
   inputs = {
+    self.submodules = true;
     utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     # Manually include `hosc` at the `v0.21.0`
